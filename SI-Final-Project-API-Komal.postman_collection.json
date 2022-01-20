@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "6f6e05a9-3d0f-4e2c-910a-72628ca569c6",
+		"name": "SI-Final-Project-API-Komal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. analyze Img url landmark",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "369830a282f547d5ac645834b415a844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"https://www.kids-world-travel-guide.com/images/xparis_eiffeltower_ssk500.jpeg.pagespeed.ic.03Zne2dW2F.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.155.171:3000/api/v1/analyzeImage?details=landmarks",
+					"host": [
+						"137",
+						"184",
+						"155",
+						"171"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"analyzeImage"
+					],
+					"query": [
+						{
+							"key": "details",
+							"value": "landmarks"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. analyze img url celebrities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "369830a282f547d5ac645834b415a844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"https://www.newidea.com.au/media/69312/group-of-celebrities.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.155.171:3000/api/v1/analyzeImage?details=celebrities",
+					"host": [
+						"137",
+						"184",
+						"155",
+						"171"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"analyzeImage"
+					],
+					"query": [
+						{
+							"key": "details",
+							"value": "celebrities"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Tag image url language",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"https://c.tenor.com/v8mwOB64gB0AAAAC/taylor-swift.gif\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.155.171:3000/api/v1/tagImage",
+					"host": [
+						"137",
+						"184",
+						"155",
+						"171"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tagImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. describe img url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"https://metro.co.uk/wp-content/uploads/2015/11/dog2.jpg?quality=90&strip=all\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.155.171:3000/api/v1/describeImage",
+					"host": [
+						"137",
+						"184",
+						"155",
+						"171"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"describeImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Tag image URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"url\":\"https://www.fredmiranda.com/forum/ufiles/51/966851.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "137.184.155.171:3000/api/v1/tagImage?language=hi",
+					"host": [
+						"137",
+						"184",
+						"155",
+						"171"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tagImage"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "hi"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
